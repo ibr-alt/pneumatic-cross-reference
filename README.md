@@ -1,77 +1,74 @@
-# Таблица соответствий пневматики: чужой код → код WAALPC
+# Pneumatic part-number and size reference data
 
-Открытая таблица подбора аналогов промышленной пневматики: код изделия другого производителя (Festo, SMC, Camozzi, AirTAC, Parker, Norgren и др.) → код изделия WAALPC. Всего 78701 проверенных соответствий, 34 производителей.
+Supplier-maintained, openly licensed reference data for industrial pneumatic cylinders.
+The checked snapshot contains **61 cross-reference pairs** from **Festo (4), SMC (19), AirTAC (20) and Camozzi (18)** to a WAALPC candidate size, with bore and stroke in millimetres and a reference page for each candidate.
 
-Страницы недели: [kody-2026-11-16](kody-2026-11-16.md), [kody-2026-11-08](kody-2026-11-08.md), [kody-2026-11-02](kody-2026-11-02.md).
+## Download
 
-Источник: [corneta.tech — подбор аналогов пневматики](https://corneta.tech/analog/) ([corneta.tech](https://corneta.tech/)). Таблица выгружена 01.11.2026 из рабочей базы сайта; в выгрузку попали только соответствия, прошедшие проверку.
+- [Checked CSV, 16 November 2026](checked/2026-11-16.csv) — UTF-8, comma-separated, one pair per row, no login.
+- [Provenance and SHA-256](checked/2026-11-16.provenance.json) — core row identifiers, source fingerprints and verification criteria.
+- [License](LICENSE) — Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-## Столбцы
+The 61 pairs link to **59 distinct size-reference pages** on [corneta.tech](https://corneta.tech/analog/). All 59 addresses returned HTTP 200 at their canonical URL when checked on 16 November 2026. Repeated candidate sizes are intentional: different foreign part numbers can lead to the same candidate.
 
-| Столбец | Смысл |
+## What a row means
+
+`relation=size_candidate` records a candidate with the stated bore and stroke. It does **not** certify a drop-in replacement, manufacturer approval, or identical mounting, rod end, port thread, cushioning, sensors, pressure or temperature limits. Check the two manufacturers' drawings and specifications before substitution. The reference website is operated by the dataset supplier and contains commercial product pages; the CSV itself contains no prices, availability or delivery times.
+
+Part numbers are strings: preserve punctuation, leading zeros and letter case. Numeric Festo ordering identifiers are valid strings too. `bore_mm` and `stroke_mm` refer to the WAALPC candidate. There are no negative pairs, evaluation splits or measured matching-accuracy claims.
+
+## Schema
+
+| Column | Meaning |
 |---|---|
-| brand | производитель чужого изделия |
-| alien_code | код чужого изделия, как он указан у производителя |
-| waalpc_code | код изделия WAALPC |
-| level | уровень соответствия (см. ниже) |
-| page_url | страница на corneta.tech/analog/ с описанием подбора; пусто, если отдельной страницы нет |
+| `brand` | Manufacturer of the foreign part number. |
+| `alien_code` | Foreign part number, preserved from the source. |
+| `waalpc_code` | Exact WAALPC candidate SKU. |
+| `bore_mm` | Candidate bore in millimetres. |
+| `stroke_mm` | Candidate stroke in millimetres. |
+| `relation` | `size_candidate`; no automatic physical-interchangeability claim. |
+| `reference_url` | Canonical candidate page on corneta.tech. |
+| `checked_on` | Snapshot check date, ISO 8601. |
 
-## Уровни
+## Source and verification
 
-- `drop_in` — полное соответствие: изделие WAALPC ставится вместо чужого без переделки.
-- `near` — близкое соответствие: основные параметры совпадают, но есть отличие, которое нужно учесть при замене (например, резьба портов: у чужого изделия PT/Rc, у нашего G). Отличие указано на странице подбора.
+This is a dated, read-only export of the shared `wp_cv2_analog_index` source, not an independently maintained mapping database. Updates must be generated from that source again; do not hand-edit correspondences in this repository.
 
-Перед заменой сверяйте параметры по паспорту изделия и по странице на сайте. Ряд ISO в таблицу не включён.
+Every included pair met all of these checks:
 
-## Файлы по производителям
+1. The latest fact-check decision for the exact brand, foreign code and WAALPC SKU was approved, with an identified catalog basis.
+2. The exact pair was present in the live core with `verified=1` and a level other than the search-only `poisk` level.
+3. The exact candidate SKU existed in the SKU registry; its bore and stroke agreed with the core; its parent product was published.
+4. Its reference URL passed the live HTTP, canonical URL and candidate-code checks. Protected experiment/control addresses and unsuccessful URL checks were excluded.
 
-| Производитель | Файл | Строк |
-|---|---|---|
-| SMC | [smc.csv](data/smc.csv) | 18932 |
-| AirTAC | [airtac.csv](data/airtac.csv) | 16073 |
-| Festo | [festo.csv](data/festo.csv) | 8826 |
-| SNS | [sns.csv](data/sns.csv) | 5352 |
-| XCPC | [xcpc.csv](data/xcpc.csv) | 4529 |
-| Camozzi | [camozzi.csv](data/camozzi.csv) | 3644 |
-| Mindman | [mindman.csv](data/mindman.csv) | 3197 |
-| STNC | [stnc.csv](data/stnc.csv) | 3165 |
-| Pneumax | [pneumax.csv](data/pneumax.csv) | 2705 |
-| CHELIC | [chelic.csv](data/chelic.csv) | 2105 |
-| Norgren | [norgren.csv](data/norgren.csv) | 1601 |
-| Parker | [parker.csv](data/parker.csv) | 1512 |
-| E.MC | [e-mc.csv](data/e-mc.csv) | 1105 |
-| Metal Work | [metal-work.csv](data/metal-work.csv) | 1050 |
-| CKD | [ckd.csv](data/ckd.csv) | 993 |
-| Aignep | [aignep.csv](data/aignep.csv) | 911 |
-| Univer | [univer.csv](data/univer.csv) | 891 |
-| Legris | [legris.csv](data/legris.csv) | 551 |
-| AVENTICS | [aventics.csv](data/aventics.csv) | 545 |
-| Bosch | [bosch.csv](data/bosch.csv) | 503 |
-| PISCO | [pisco.csv](data/pisco.csv) | 398 |
-| Burkert | [burkert.csv](data/burkert.csv) | 55 |
-| ASCO | [asco.csv](data/asco.csv) | 16 |
-| Pemaks | [pemaks.csv](data/pemaks.csv) | 11 |
-| Goyen | [goyen.csv](data/goyen.csv) | 8 |
-| NBPT | [nbpt.csv](data/nbpt.csv) | 7 |
-| FESCOLO | [fescolo.csv](data/fescolo.csv) | 5 |
-| ZITA | [zita.csv](data/zita.csv) | 3 |
-| OLK | [olk.csv](data/olk.csv) | 2 |
-| Rotork | [rotork.csv](data/rotork.csv) | 2 |
-| ASCO Joucomatic | [asco-joucomatic.csv](data/asco-joucomatic.csv) | 1 |
-| Aventics | [aventics.csv](data/aventics.csv) | 1 |
-| Findeva | [findeva.csv](data/findeva.csv) | 1 |
-| SXPC | [sxpc.csv](data/sxpc.csv) | 1 |
+The core's `verified` flag alone was not treated as proof of a catalogued foreign code or of full interchangeability. The provenance file records the supporting core IDs and the fact-check source fingerprint; private operational notes and credentials are not distributed.
 
-Цены и закупочные данные в таблицу не входят.
+## Use
 
-## Лицензия
+The CSV can be used as reference input for spare-parts identifier reconciliation, catalog normalization and manual candidate-size lookup. It is a small supplier-selected sample, not an exhaustive manufacturer catalog or a validated machine-learning benchmark.
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ru): можно использовать, копировать и изменять с указанием источника — «corneta.tech — подбор аналогов пневматики», https://corneta.tech/analog/.
+```python
+import csv
+from pathlib import Path
 
----
+with Path("checked/2026-11-16.csv").open(encoding="utf-8", newline="") as stream:
+    rows = list(csv.DictReader(stream))
 
-## English summary
+matches = [row for row in rows if row["brand"] == "SMC"]
+```
 
-Open cross-reference table for industrial pneumatics: third-party part number (Festo, SMC, Camozzi, AirTAC, Parker, Norgren, etc.) → WAALPC part number. 78701 verified mappings, 34 manufacturers, one CSV per brand in `data/`. Columns: `brand`, `alien_code`, `waalpc_code`, `level`, `page_url`. Levels: `drop_in` = direct replacement; `near` = close match with a difference to consider (e.g. port thread PT/Rc vs G). No prices. Always check datasheets before substitution.
+## Earlier exports and reference pages
 
-License: CC BY 4.0. Attribution: "corneta.tech — подбор аналогов пневматики", https://corneta.tech/analog/ (site: https://corneta.tech/).
+The [historical per-brand CSV files](data/) were exported on 1 November 2026. They have a different schema and were **not revalidated under the checks above**. Their old `drop_in` and `near` labels should not be treated as current replacement certification. Use `checked/2026-11-16.csv` for the checked sample described here.
+
+Existing reference pages: [GitHub Pages](https://ibr-alt.github.io/pneumatic-cross-reference/), [16 November](kody-2026-11-16.md), [8 November](kody-2026-11-08.md), [2 November](kody-2026-11-02.md).
+
+## Attribution and corrections
+
+Publisher and affiliation: **corneta.tech**, a supplier of industrial pneumatics. This is supplier-maintained data, independent of the named third-party manufacturers. Product and brand names identify their respective products and owners.
+
+Reuse is permitted under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Attribute the data to “corneta.tech — pneumatic cross-reference data”, link this repository, and identify any changes. Report a suspected incorrect pair in this repository's issues with the brand, both codes and a catalog reference; corrections belong in the shared source before a new export.
+
+## Кратко по-русски
+
+Проверенный срез: **61 пара, 4 марки, 59 страниц типоразмеров**, дата 16.11.2026. Чужой код ведёт к кандидату WAALPC с указанными диаметром и ходом. Это не гарантия полной взаимозаменяемости. Источник один — ядро `wp_cv2_analog_index`; срез не заменяет его. Проверены точная пара в фактчеке, ядро, существующий SKU, оси и живой адрес. Старые файлы `data/` не проходили эту повторную проверку. Лицензия CC BY 4.0, издатель — corneta.tech.

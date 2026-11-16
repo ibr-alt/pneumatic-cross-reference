@@ -1,0 +1,600 @@
+{
+  "snapshot_date": "2026-11-16",
+  "rows": 61,
+  "relation": "size_candidate",
+  "authoritative_source": "wp_cv2_analog_index",
+  "snapshot_is_authoritative": false,
+  "verification": [
+    "latest exact brand / alien code / WAALPC SKU fact-check decision is approved",
+    "exact pair present in core with verified=1 and level other than poisk",
+    "exact SKU present in registry; bore and stroke agree with core",
+    "parent product is published"
+  ],
+  "core_query_sha256": "3ff84abeca7ff44d15af7e6f7c87d45aa06084011a929fd1ecb2d16509207fc5",
+  "factcheck_source_sha256": "36c82a5ca6b8fc51e3cb984dd6aef881c7005b39f086c27fc8ac2f28f2066024",
+  "csv_sha256": "7631da49b5cc970dbd717e326871b4d9dff68061f4ae99234ebbdd5f104680d5",
+  "records": [
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA20X30B",
+      "waalpc_code": "SDA-20-30-P-A",
+      "_core_ids": [
+        181825
+      ],
+      "_factcheck_line": 405410
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA20X40B",
+      "waalpc_code": "SDA-20-40-P-A",
+      "_core_ids": [
+        181826
+      ],
+      "_factcheck_line": 405412
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA20X80",
+      "waalpc_code": "SDA-20-80-P-A",
+      "_core_ids": [
+        181787
+      ],
+      "_factcheck_line": 405413
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA25X10B",
+      "waalpc_code": "SDA-25-10-P-A",
+      "_core_ids": [
+        181827
+      ],
+      "_factcheck_line": 405415
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA25X70B",
+      "waalpc_code": "SDA-25-70-P-A",
+      "_core_ids": [
+        181828
+      ],
+      "_factcheck_line": 405417
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA25X80",
+      "waalpc_code": "SDA-25-80-P-A",
+      "_core_ids": [
+        181789
+      ],
+      "_factcheck_line": 405418
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA32X100",
+      "waalpc_code": "SDA-32-100-P-A",
+      "_core_ids": [
+        181791
+      ],
+      "_factcheck_line": 405420
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA32X25",
+      "waalpc_code": "SDA-32-25-P-A",
+      "_core_ids": [
+        181793
+      ],
+      "_factcheck_line": 405422
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA50X100",
+      "waalpc_code": "SDA-50-100-P-A",
+      "_core_ids": [
+        181796
+      ],
+      "_factcheck_line": 405424
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA50X10B",
+      "waalpc_code": "SDA-50-10-P-A",
+      "_core_ids": [
+        181829
+      ],
+      "_factcheck_line": 405426
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA50X15",
+      "waalpc_code": "SDA-50-15-P-A",
+      "_core_ids": [
+        181797
+      ],
+      "_factcheck_line": 405428
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA50X25",
+      "waalpc_code": "SDA-50-25-P-A",
+      "_core_ids": [
+        181798
+      ],
+      "_factcheck_line": 405430
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA63X100",
+      "waalpc_code": "SDA-63-100-P-A",
+      "_core_ids": [
+        181799
+      ],
+      "_factcheck_line": 405432
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA63X50",
+      "waalpc_code": "SDA-63-50-P-A",
+      "_core_ids": [
+        181801
+      ],
+      "_factcheck_line": 405434
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SDA80X20",
+      "waalpc_code": "SDA-80-20-P-A",
+      "_core_ids": [
+        181802
+      ],
+      "_factcheck_line": 405436
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SE40X700",
+      "waalpc_code": "DSBC-40-700-PPV-A",
+      "_core_ids": [
+        181842
+      ],
+      "_factcheck_line": 405438
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SI100X100",
+      "waalpc_code": "SI-100-100-PPV-A",
+      "_core_ids": [
+        181782
+      ],
+      "_factcheck_line": 405440
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SI100X500",
+      "waalpc_code": "SI-100-500-PPV-A",
+      "_core_ids": [
+        181783
+      ],
+      "_factcheck_line": 405442
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SI125X800",
+      "waalpc_code": "SI-125-800-PPV-A",
+      "_core_ids": [
+        181784
+      ],
+      "_factcheck_line": 405444
+    },
+    {
+      "brand": "AirTAC",
+      "alien_code": "SI63X200",
+      "waalpc_code": "SI-63-200-PPV-A",
+      "_core_ids": [
+        181781
+      ],
+      "_factcheck_line": 405446
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "16N2A12A015",
+      "waalpc_code": "DSNU-12-15-P-A",
+      "_core_ids": [
+        181816
+      ],
+      "_factcheck_line": 405373
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "16N2A12A030",
+      "waalpc_code": "DSNU-12-30-P-A",
+      "_core_ids": [
+        181817
+      ],
+      "_factcheck_line": 405375
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A010",
+      "waalpc_code": "DSNU-25-10-PPV-A",
+      "_core_ids": [
+        105798,
+        120016
+      ],
+      "_factcheck_line": 404609
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A015",
+      "waalpc_code": "DSNU-25-15-PPV-A",
+      "_core_ids": [
+        105799,
+        110703
+      ],
+      "_factcheck_line": 404610
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A020",
+      "waalpc_code": "DSNU-25-20-PPV-A",
+      "_core_ids": [
+        105800,
+        110704
+      ],
+      "_factcheck_line": 404611
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A030",
+      "waalpc_code": "DSNU-25-30-PPV-A",
+      "_core_ids": [
+        105801,
+        110705
+      ],
+      "_factcheck_line": 404612
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A040",
+      "waalpc_code": "DSNU-25-40-PPV-A",
+      "_core_ids": [
+        105802,
+        110706
+      ],
+      "_factcheck_line": 404613
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A060",
+      "waalpc_code": "DSNU-25-60-PPV-A",
+      "_core_ids": [
+        105803,
+        120017
+      ],
+      "_factcheck_line": 404614
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A075",
+      "waalpc_code": "DSNU-25-75-PPV-A",
+      "_core_ids": [
+        105804,
+        110707
+      ],
+      "_factcheck_line": 404615
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A150",
+      "waalpc_code": "DSNU-25-150-PPV-A",
+      "_core_ids": [
+        105806,
+        110708
+      ],
+      "_factcheck_line": 404617
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A175",
+      "waalpc_code": "DSNU-25-175-PPV-A",
+      "_core_ids": [
+        105807,
+        120019
+      ],
+      "_factcheck_line": 404618
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A200",
+      "waalpc_code": "DSNU-25-200-PPV-A",
+      "_core_ids": [
+        105808,
+        120020
+      ],
+      "_factcheck_line": 404619
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A250",
+      "waalpc_code": "DSNU-25-250-PPV-A",
+      "_core_ids": [
+        105809,
+        120021
+      ],
+      "_factcheck_line": 404620
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A300",
+      "waalpc_code": "DSNU-25-300-PPV-A",
+      "_core_ids": [
+        105810,
+        110709
+      ],
+      "_factcheck_line": 404621
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A400",
+      "waalpc_code": "DSNU-25-400-PPV-A",
+      "_core_ids": [
+        105811,
+        120022
+      ],
+      "_factcheck_line": 404622
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "23N2A25A500",
+      "waalpc_code": "DSNU-25-500-PPV-A",
+      "_core_ids": [
+        105812,
+        110710
+      ],
+      "_factcheck_line": 404623
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "40N2L100A0100",
+      "waalpc_code": "DSBG-100-100-PPV-A",
+      "_core_ids": [
+        181822
+      ],
+      "_factcheck_line": 405377
+    },
+    {
+      "brand": "Camozzi",
+      "alien_code": "67MP2C080A0160",
+      "waalpc_code": "DSBG-80-160-PPV-A",
+      "_core_ids": [
+        181803
+      ],
+      "_factcheck_line": 405379
+    },
+    {
+      "brand": "Festo",
+      "alien_code": "DSNU-16-25-PPS",
+      "waalpc_code": "DSNU-16-25-PPV-A",
+      "_core_ids": [
+        181834
+      ],
+      "_factcheck_line": 405348
+    },
+    {
+      "brand": "Festo",
+      "alien_code": "DSNU-20-60-PPS",
+      "waalpc_code": "DSNU-20-60-PPV-A",
+      "_core_ids": [
+        181835
+      ],
+      "_factcheck_line": 405385
+    },
+    {
+      "brand": "Festo",
+      "alien_code": "DSNU-25-10-PPS",
+      "waalpc_code": "DSNU-25-10-PPV-A",
+      "_core_ids": [
+        181836
+      ],
+      "_factcheck_line": 405350
+    },
+    {
+      "brand": "Festo",
+      "alien_code": "DSNU-25-200-PPS",
+      "waalpc_code": "DSNU-25-200-PPV-A",
+      "_core_ids": [
+        181832
+      ],
+      "_factcheck_line": 405387
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM20-100",
+      "waalpc_code": "CXSM-20-100",
+      "_core_ids": [
+        8800,
+        138131
+      ],
+      "_factcheck_line": 416261
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM20-125",
+      "waalpc_code": "CXSM-20-125",
+      "_core_ids": [
+        8805,
+        121153
+      ],
+      "_factcheck_line": 416262
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM20-150",
+      "waalpc_code": "CXSM-20-150",
+      "_core_ids": [
+        8812,
+        121154
+      ],
+      "_factcheck_line": 416263
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM20-175",
+      "waalpc_code": "CXSM-20-175",
+      "_core_ids": [
+        8821,
+        121158
+      ],
+      "_factcheck_line": 416265
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM20-200-XB11",
+      "waalpc_code": "CXSM-20-200",
+      "_core_ids": [
+        66682,
+        142921
+      ],
+      "_factcheck_line": 416267
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM20-75",
+      "waalpc_code": "CXSM-20-75",
+      "_core_ids": [
+        8795,
+        118435
+      ],
+      "_factcheck_line": 416260
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-100",
+      "waalpc_code": "CXSM-25-100",
+      "_core_ids": [
+        8809,
+        118440
+      ],
+      "_factcheck_line": 416278
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-125",
+      "waalpc_code": "CXSM-25-125",
+      "_core_ids": [
+        8813,
+        121155
+      ],
+      "_factcheck_line": 416279
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-15",
+      "waalpc_code": "CXSM-25-15",
+      "_core_ids": [
+        8793,
+        121149
+      ],
+      "_factcheck_line": 416269
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-150",
+      "waalpc_code": "CXSM-25-150",
+      "_core_ids": [
+        8819,
+        121157
+      ],
+      "_factcheck_line": 416280
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-175",
+      "waalpc_code": "CXSM-25-175",
+      "_core_ids": [
+        8832,
+        121161
+      ],
+      "_factcheck_line": 416281
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-20",
+      "waalpc_code": "CXSM-25-20",
+      "_core_ids": [
+        8794,
+        118434
+      ],
+      "_factcheck_line": 416270
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-200-XB11",
+      "waalpc_code": "CXSM-25-200",
+      "_core_ids": [
+        66683,
+        142922
+      ],
+      "_factcheck_line": 416282
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-25",
+      "waalpc_code": "CXSM-25-25",
+      "_core_ids": [
+        8797,
+        121150
+      ],
+      "_factcheck_line": 416271
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-30",
+      "waalpc_code": "CXSM-25-30",
+      "_core_ids": [
+        8798,
+        118437
+      ],
+      "_factcheck_line": 416272
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-35",
+      "waalpc_code": "CXSM-25-35",
+      "_core_ids": [
+        8801,
+        121151
+      ],
+      "_factcheck_line": 416273
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-40",
+      "waalpc_code": "CXSM-25-40",
+      "_core_ids": [
+        8802,
+        118438
+      ],
+      "_factcheck_line": 416274
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-45",
+      "waalpc_code": "CXSM-25-45",
+      "_core_ids": [
+        8803,
+        121152
+      ],
+      "_factcheck_line": 416275
+    },
+    {
+      "brand": "SMC",
+      "alien_code": "CXSM25-75",
+      "waalpc_code": "CXSM-25-75",
+      "_core_ids": [
+        8806,
+        118439
+      ],
+      "_factcheck_line": 416277
+    }
+  ]
+}
